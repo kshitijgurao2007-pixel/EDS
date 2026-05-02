@@ -1,0 +1,13 @@
+import numpy as np
+
+# write your code here...
+rows,cols = map(int,input().split())
+elements = []
+for _ in range (rows):
+	elements.extend(map(int,input().split()))
+array = np.array(elements)
+rearr = array.reshape(rows,cols)
+print(rearr)
+print(rearr.ndim)
+print(rearr.shape)
+print(rearr.size)
